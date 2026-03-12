@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="سوبر جات - منصة تواصل وخدمة عملاء موحدة. إدارة كل محادثاتك من مكان واحد." />
+  <title>سوبر جات - منصة خدمة العملاء الموحدة</title>
+
+  <!-- Google Fonts - Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo" aria-label="سوبر جات">
+        <span class="logo-icon">💬</span>
+        <span class="logo-text">سوبر <span class="accent">جات</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="القائمة الرئيسية">
+        <a href="#features">المميزات</a>
+        <a href="#how-it-works">كيف يعمل</a>
+        <a href="#pricing">الأسعار</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#pricing" class="btn btn-outline">ابدأ مجاناً</a>
+        <a href="#contact" class="btn btn-primary">تجربة مجانية</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          🚀 الجديد: تكامل مع واتساب وإنستغرام
+        </div>
+
+        <h1 class="hero-title">
+          وحّد كل <span class="gradient-text">محادثاتك</span><br />
+          في مكان واحد
+        </h1>
+
+        <p class="hero-description">
+          سوبر جات منصة متكاملة لخدمة العملاء تتيح لفريقك إدارة جميع
+          المحادثات من واتساب وإنستغرام والبريد الإلكتروني وغيرها — كلها
+          في صندوق وارد موحد وذكي.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#pricing" class="btn btn-primary btn-lg">
+            ابدأ تجربتك المجانية
+            <span class="btn-arrow">←</span>
+          </a>
+          <a href="#how-it-works" class="btn btn-ghost btn-lg">
+            <span class="play-icon">▶</span>
+            شاهد كيف يعمل
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">+500</span>
+            <span class="stat-label">شركة تثق بنا</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">رضا العملاء</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-number">+2M</span>
+            <span class="stat-label">محادثة شهرياً</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="dashboard-mockup">
+          <div class="mockup-header">
+            <div class="mockup-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="mockup-title">سوبر جات - لوحة التحكم</div>
+          </div>
+          <div class="mockup-body">
+            <div class="mockup-sidebar">
+              <div class="sidebar-item active">
+                <span class="sidebar-icon">📬</span>
+                <span>الصندوق الوارد</span>
+                <span class="badge">12</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-icon">💬</span>
+                <span>المحادثات</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-icon">🤖</span>
+                <span>الروبوت</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-icon">📊</span>
+                <span>التقارير</span>
+              </div>
+            </div>
+            <div class="mockup-main">
+              <div class="chat-item unread">
+                <div class="chat-avatar">أح</div>
+                <div class="chat-info">
+                  <div class="chat-name">أحمد محمود</div>
+                  <div class="chat-preview">أريد الاستفسار عن...</div>
+                </div>
+                <div class="chat-meta">
+                  <span class="chat-time">9:30 ص</span>
+                  <span class="platform-badge whatsapp">واتساب</span>
+                </div>
+              </div>
+              <div class="chat-item">
+                <div class="chat-avatar">سا</div>
+                <div class="chat-info">
+                  <div class="chat-name">سارة علي</div>
+                  <div class="chat-preview">شكراً جزيلاً على المساعدة</div>
+                </div>
+                <div class="chat-meta">
+                  <span class="chat-time">8:15 ص</span>
+                  <span class="platform-badge instagram">إنستغرام</span>
+                </div>
+              </div>
+              <div class="chat-item">
+                <div class="chat-avatar">مح</div>
+                <div class="chat-info">
+                  <div class="chat-name">محمد خالد</div>
+                  <div class="chat-preview">هل يمكنني تغيير الطلب؟</div>
+                </div>
+                <div class="chat-meta">
+                  <span class="chat-time">أمس</span>
+                  <span class="platform-badge email">إيميل</span>
+                </div>
+              </div>
+              <div class="mockup-notification">
+                <span class="notif-icon">🤖</span>
+                <span>الروبوت رد على 5 استفسارات تلقائياً</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-card card-1">
+          <span class="floating-icon">⚡</span>
+          <div>
+            <div class="floating-title">وقت الاستجابة</div>
+            <div class="floating-value">أقل من دقيقة</div>
+          </div>
+        </div>
+
+        <div class="floating-card card-2">
+          <span class="floating-icon">📈</span>
+          <div>
+            <div class="floating-title">رضا العملاء</div>
+            <div class="floating-value">98% ⭐</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLIENTS STRIP ===== -->
+  <section class="clients-strip" aria-label="شركاؤنا">
+    <div class="container">
+      <p class="clients-label">موثوق به من قِبَل الشركات الرائدة</p>
+      <div class="clients-logos">
+        <div class="client-logo">شركة النجوم</div>
+        <div class="client-logo">مجموعة الفجر</div>
+        <div class="client-logo">تقنية الريادة</div>
+        <div class="client-logo">متجر البريق</div>
+        <div class="client-logo">مؤسسة الوفاء</div>
+        <div class="client-logo">شركة الإبداع</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES SECTION ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">✨ المميزات</div>
+        <h2 class="section-title">كل ما تحتاجه لخدمة عملاء استثنائية</h2>
+        <p class="section-desc">
+          منصة سوبر جات تجمع كل أدوات التواصل في مكان واحد لتمنح فريقك
+          القدرة على تقديم تجربة عملاء لا مثيل لها.
+        </p>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card feature-card-large">
+          <div class="feature-icon-wrap">
+            <span class="feature-icon">📬</span>
+          </div>
+          <h3>صندوق وارد موحد</h3>
+          <p>
+            اجمع كل رسائلك من واتساب وإنستغرام والبريد الإلكتروني وتويتر
+            في صندوق وارد واحد ذكي. لا تفوتك أي رسالة بعد الآن.
+          </p>
+          <ul class="feature-list">
+            <li>✅ واتساب بيزنس API</li>
+            <li>✅ إنستغرام Direct</li>
+            <li>✅ البريد الإلكتروني</li>
+            <li>✅ تويتر / X</li>
+            <li>✅ تيليغرام</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <span class="feature-icon">🤖</span>
+          </div>
+          <h3>روبوت محادثة ذكي</h3>
+          <p>
+            أنشئ روبوت محادثة بدون برمجة يرد على الأسئلة الشائعة تلقائياً
+            ويحيل العملاء للموظف المناسب عند الحاجة.
+          </p>
+          <div class="feature-highlight">يوفر 60% من وقت فريقك</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <span class="feature-icon">👥</span>
+          </div>
+          <h3>إدارة الفريق</h3>
+          <p>
+            وزّع المحادثات على أعضاء فريقك، تابع الأداء، وتأكد من أن كل
+            عميل يحصل على الاهتمام الذي يستحقه.
+          </p>
+          <div class="feature-highlight">تعاون سلس بين الأقسام</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <span class="feature-icon">📊</span>
+          </div>
+          <h3>تقارير وتحليلات متقدمة</h3>
+          <p>
+            احصل على رؤى عميقة حول أداء فريقك ورضا عملائك من خلال لوحات
+            بيانات تفاعلية وتقارير مفصّلة.
+          </p>
+          <div class="feature-highlight">قرارات مبنية على البيانات</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <span class="feature-icon">🏷️</span>
+          </div>
+          <h3>تصنيف وتنظيم ذكي</h3>
+          <p>
+            صنّف المحادثات بالوسوم والتصنيفات، وابحث فيها بسرعة، وتتبع
+            حالة كل طلب دعم بدقة.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <span class="feature-icon">⚡</span>
+          </div>
+          <h3>ردود سريعة وقوالب</h3>
+          <p>
+            أنشئ قوالب ردود جاهزة للأسئلة الشائعة، ووفّر وقت فريقك مع
+            الحفاظ على جودة الردود.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">🛠️ كيف يعمل</div>
+        <h2 class="section-title">ابدأ في 3 خطوات بسيطة</h2>
+        <p class="section-desc">لا تحتاج إلى خبرة تقنية. الإعداد يستغرق أقل من 10 دقائق.</p>
+      </div>
+
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-number">١</div>
+          <div class="step-content">
+            <h3>سجّل وأنشئ حسابك</h3>
+            <p>أنشئ حسابك مجاناً في ثوانٍ دون الحاجة لبطاقة ائتمانية.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step-number">٢</div>
+          <div class="step-content">
+            <h3>وصّل قنوات التواصل</h3>
+            <p>اربط واتساب وإنستغرام وبقية القنوات بنقرة واحدة.</p>
+          </div>
+        </div>
+        <div class="step-connector" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step-number">٣</div>
+          <div class="step-content">
+            <h3>ابدأ التواصل مع عملائك</h3>
+            <p>استقبل كل رسائلك في مكان واحد وقدّم خدمة عملاء استثنائية.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING SECTION ===== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">💰 الأسعار</div>
+        <h2 class="section-title">خطط مرنة تناسب جميع الأعمال</h2>
+        <p class="section-desc">جميع الخطط تشمل تجربة مجانية 14 يوماً. لا حاجة لبطاقة ائتمانية.</p>
+      </div>
+
+      <div class="pricing-toggle">
+        <span class="toggle-label">شهري</span>
+        <button class="toggle-btn" id="billingToggle" role="switch" aria-checked="false" aria-label="التبديل بين الدفع الشهري والسنوي">
+          <span class="toggle-thumb"></span>
+        </button>
+        <span class="toggle-label">
+          سنوي
+          <span class="save-badge">وفّر 20%</span>
+        </span>
+      </div>
+
+      <div class="pricing-cards">
+
+        <div class="pricing-card">
+          <div class="plan-name">المبتدئ</div>
+          <div class="plan-price">
+            <span class="price-currency">ر.س</span>
+            <span class="price-amount" data-monthly="99" data-yearly="79">99</span>
+            <span class="price-period">/ شهر</span>
+          </div>
+          <p class="plan-desc">مثالي للشركات الناشئة والمشاريع الصغيرة</p>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> 2 قنوات تواصل</li>
+            <li><span class="check">✓</span> 3 أعضاء فريق</li>
+            <li><span class="check">✓</span> 1,000 محادثة / شهر</li>
+            <li><span class="check">✓</span> روبوت محادثة أساسي</li>
+            <li><span class="check">✓</span> تقارير أساسية</li>
+            <li class="unavailable"><span class="x">✗</span> تكاملات متقدمة</li>
+            <li class="unavailable"><span class="x">✗</span> دعم أولوية</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-full">ابدأ مجاناً</a>
+        </div>
+
+        <div class="pricing-card pricing-card-popular">
+          <div class="popular-badge">الأكثر شعبية ⭐</div>
+          <div class="plan-name">الاحترافي</div>
+          <div class="plan-price">
+            <span class="price-currency">ر.س</span>
+            <span class="price-amount" data-monthly="299" data-yearly="239">299</span>
+            <span class="price-period">/ شهر</span>
+          </div>
+          <p class="plan-desc">للفرق المتنامية التي تحتاج مميزات متقدمة</p>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> 10 قنوات تواصل</li>
+            <li><span class="check">✓</span> 15 عضو فريق</li>
+            <li><span class="check">✓</span> 10,000 محادثة / شهر</li>
+            <li><span class="check">✓</span> روبوت محادثة متقدم</li>
+            <li><span class="check">✓</span> تقارير متقدمة</li>
+            <li><span class="check">✓</span> تكاملات متقدمة</li>
+            <li class="unavailable"><span class="x">✗</span> مدير حساب مخصص</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-full">ابدأ مجاناً</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="plan-name">المؤسسات</div>
+          <div class="plan-price">
+            <span class="price-currency">ر.س</span>
+            <span class="price-amount" data-monthly="799" data-yearly="639">799</span>
+            <span class="price-period">/ شهر</span>
+          </div>
+          <p class="plan-desc">للشركات الكبيرة ذات الاحتياجات المتقدمة</p>
+          <ul class="plan-features">
+            <li><span class="check">✓</span> قنوات غير محدودة</li>
+            <li><span class="check">✓</span> أعضاء فريق غير محدودون</li>
+            <li><span class="check">✓</span> محادثات غير محدودة</li>
+            <li><span class="check">✓</span> روبوت محادثة بالذكاء الاصطناعي</li>
+            <li><span class="check">✓</span> تقارير مخصصة</li>
+            <li><span class="check">✓</span> تكاملات مخصصة</li>
+            <li><span class="check">✓</span> مدير حساب مخصص</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-full">تواصل معنا</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" aria-label="آراء العملاء">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">💬 آراء العملاء</div>
+        <h2 class="section-title">ماذا يقول عملاؤنا؟</h2>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 نجوم من 5">★★★★★</div>
+          <p class="testimonial-text">
+            "سوبر جات غيّر طريقة عملنا بالكامل. الآن فريقنا يتعامل مع
+            ضعف عدد العملاء بنفس الوقت والجهد!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">عم</div>
+            <div class="author-info">
+              <div class="author-name">عمر محمد</div>
+              <div class="author-title">مدير خدمة العملاء، شركة النجوم</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card testimonial-card-featured">
+          <div class="testimonial-stars" aria-label="5 نجوم من 5">★★★★★</div>
+          <p class="testimonial-text">
+            "الروبوت الذكي يرد على 70% من الاستفسارات تلقائياً. وفّرنا
+            آلاف الريالات ورفعنا رضا العملاء في نفس الوقت."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">نخ</div>
+            <div class="author-info">
+              <div class="author-name">نورة الخالدي</div>
+              <div class="author-title">مؤسسة متجر البريق</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 نجوم من 5">★★★★★</div>
+          <p class="testimonial-text">
+            "التقارير التفصيلية ساعدتنا على فهم احتياجات عملائنا وتطوير
+            خدماتنا بشكل ملموس."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">فع</div>
+            <div class="author-info">
+              <div class="author-name">فيصل العتيبي</div>
+              <div class="author-title">الرئيس التنفيذي، تقنية الريادة</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact-container">
+      <div class="contact-info">
+        <div class="section-badge">📞 تواصل معنا</div>
+        <h2 class="section-title">هل أنت مستعد للبدء؟</h2>
+        <p class="section-desc">
+          تواصل مع فريقنا الآن واحصل على استشارة مجانية. سنساعدك في
+          اختيار الخطة الأنسب لعملك.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <span class="contact-icon">📧</span>
+            <div>
+              <div class="detail-label">البريد الإلكتروني</div>
+              <!-- TODO: Replace with actual contact email before deployment -->
+              <a href="mailto:hello@superchat.sa" class="detail-value">hello@superchat.sa</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-icon">📱</span>
+            <div>
+              <div class="detail-label">واتساب</div>
+              <!-- TODO: Replace with actual WhatsApp number before deployment -->
+              <a href="https://wa.me/966500000000" class="detail-value" rel="noopener noreferrer" target="_blank">+966 50 000 0000</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-icon">🕐</span>
+            <div>
+              <div class="detail-label">ساعات العمل</div>
+              <span class="detail-value">الأحد - الخميس، 9 ص - 6 م</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">الاسم الكامل <span class="required" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="أدخل اسمك الكامل"
+                required
+                autocomplete="name"
+              />
+              <span class="field-error" id="fullNameError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">البريد الإلكتروني <span class="required" aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@company.com"
+                required
+                autocomplete="email"
+              />
+              <span class="field-error" id="emailError" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="company">اسم الشركة</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="اسم شركتك أو مشروعك"
+                autocomplete="organization"
+              />
+            </div>
+            <div class="form-group">
+              <label for="plan">الخطة المهتم بها</label>
+              <select id="plan" name="plan">
+                <option value="">اختر الخطة</option>
+                <option value="starter">المبتدئ - 99 ر.س / شهر</option>
+                <option value="pro">الاحترافي - 299 ر.س / شهر</option>
+                <option value="enterprise">المؤسسات - 799 ر.س / شهر</option>
+                <option value="custom">خطة مخصصة</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">رسالتك <span class="required" aria-hidden="true">*</span></label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="أخبرنا عن احتياجاتك وكيف يمكننا مساعدتك..."
+              required
+            ></textarea>
+            <span class="field-error" id="messageError" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full btn-lg" id="submitBtn">
+            <span class="btn-text">أرسل رسالتك</span>
+            <span class="btn-loading" aria-hidden="true">جاري الإرسال...</span>
+          </button>
+
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+            <span class="success-icon">✅</span>
+            <p>تم إرسال رسالتك بنجاح! سيتواصل معك فريقنا خلال 24 ساعة.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo" aria-label="سوبر جات">
+          <span class="logo-icon">💬</span>
+          <span class="logo-text">سوبر <span class="accent">جات</span></span>
+        </a>
+        <p class="footer-tagline">منصة خدمة العملاء الموحدة للأعمال العربية</p>
+        <div class="social-links">
+          <a href="#" aria-label="تويتر" class="social-link" rel="noopener noreferrer">𝕏</a>
+          <a href="#" aria-label="لينكدإن" class="social-link" rel="noopener noreferrer">in</a>
+          <a href="#" aria-label="واتساب" class="social-link" rel="noopener noreferrer">💬</a>
+          <a href="#" aria-label="إنستغرام" class="social-link" rel="noopener noreferrer">📷</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>المنتج</h4>
+          <ul>
+            <li><a href="#features">المميزات</a></li>
+            <li><a href="#pricing">الأسعار</a></li>
+            <li><a href="#how-it-works">كيف يعمل</a></li>
+            <li><a href="#">التكاملات</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>الشركة</h4>
+          <ul>
+            <li><a href="#">عن سوبر جات</a></li>
+            <li><a href="#">المدونة</a></li>
+            <li><a href="#">وظائف</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>الدعم</h4>
+          <ul>
+            <li><a href="#">مركز المساعدة</a></li>
+            <li><a href="#">التوثيق</a></li>
+            <li><a href="#">حالة الخدمة</a></li>
+            <li><a href="#">الشراكات</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>قانوني</h4>
+          <ul>
+            <li><a href="#">سياسة الخصوصية</a></li>
+            <li><a href="#">شروط الاستخدام</a></li>
+            <li><a href="#">سياسة الاسترجاع</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="currentYear">2024</span> سوبر جات. جميع الحقوق محفوظة.</p>
+        <p>صُنع بـ ❤️ في المملكة العربية السعودية 🇸🇦</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">↑</button>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
