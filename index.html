@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="المرتقب - منصة تواصل وخدمة عملاء موحدة. إدارة كل محادثاتك من مكان واحد." />
-  <title>المرتقب - منصة خدمة العملاء الموحدة</title>
+  <meta name="description" content="سوبر جات – حوّل حسابك في إنستغرام إلى ماكينة مبيعات ذكية. ردود تلقائية، إدارة طلبات، وأتمتة كاملة من شركة المرتقب." />
+  <title>سوبر جات – أتمتة إنستغرام الذكية | شركة المرتقب</title>
 
-  <!-- Google Fonts - Cairo -->
+  <!-- Google Fonts: Cairo (Arabic) + Inter (Technical) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -19,600 +18,777 @@
   <!-- ===== NAVBAR ===== -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="logo" aria-label="المرتقب">
-        <span class="logo-icon">🔷</span>
-        <span class="logo-text"><span class="accent">المرتقب</span></span>
+
+      <a href="#" class="logo" aria-label="سوبر جات – شركة المرتقب">
+        <div class="logo-icon-wrap">
+          <!-- Inline SVG logo: chat bubbles in blue gradient -->
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="9" fill="url(#navLogoGrad)"/>
+            <path d="M8 10h16M8 16h10M8 22h13" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="24" cy="22" r="3.5" fill="#fff" opacity="0.95"/>
+            <defs>
+              <linearGradient id="navLogoGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#3B82F6"/>
+                <stop offset="1" stop-color="#1E40AF"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">سوبر<span class="logo-accent">جات</span></span>
       </a>
 
       <nav class="nav-links" id="navLinks" aria-label="القائمة الرئيسية">
-        <a href="#features">المميزات</a>
+        <a href="#features">الميزات</a>
         <a href="#how-it-works">كيف يعمل</a>
+        <a href="#who-for">لمن هو</a>
         <a href="#pricing">الأسعار</a>
-        <a href="#contact">تواصل معنا</a>
+        <a href="#faq">الأسئلة الشائعة</a>
       </nav>
 
       <div class="nav-actions">
-        <a href="#pricing" class="btn btn-outline">ابدأ مجاناً</a>
-        <a href="#contact" class="btn btn-primary">تجربة مجانية</a>
+        <a href="#pricing" class="btn btn-outline btn-sm">الأسعار</a>
+        <a href="#cta" class="btn btn-primary btn-sm">ابدأ الآن</a>
       </div>
 
       <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navLinks">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- ===== HERO SECTION ===== -->
+  <!-- ===== 1. HERO SECTION ===== -->
   <section class="hero" id="home">
-    <div class="hero-bg-shapes" aria-hidden="true">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
+    <!-- Decorative background -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-grid"></div>
     </div>
 
     <div class="container hero-container">
+
+      <!-- Left: Text Content -->
       <div class="hero-content">
         <div class="hero-badge">
-          <span class="badge-dot"></span>
-          🚀 الجديد: تكامل مع واتساب وإنستغرام
+          <span class="badge-pulse"></span>
+          🤖 مدعوم بالذكاء الاصطناعي
         </div>
 
         <h1 class="hero-title">
-          وحّد كل <span class="gradient-text">محادثاتك</span><br />
-          في مكان واحد
+          حوّل حسابك إلى<br/>
+          <span class="gradient-text">ماكينة مبيعات ذكية</span>
         </h1>
 
-        <p class="hero-description">
-          المرتقب منصة متكاملة لخدمة العملاء تتيح لفريقك إدارة جميع
-          المحادثات من واتساب وإنستغرام والبريد الإلكتروني وغيرها — كلها
-          في صندوق وارد موحد وذكي.
+        <p class="hero-desc">
+          سوبر جات يساعدك على إدارة رسائل وتعليقات حسابك في إنستغرام بشكل ذكي،
+          والرد على العملاء تلقائياً، وتنظيم الطلبات بدون أي تعقيد.
         </p>
 
         <div class="hero-cta">
-          <a href="#pricing" class="btn btn-primary btn-lg">
-            ابدأ تجربتك المجانية
-            <span class="btn-arrow">←</span>
+          <a href="#cta" class="btn btn-primary btn-lg">
+            ابدأ الآن
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <a href="#how-it-works" class="btn btn-ghost btn-lg">
-            <span class="play-icon">▶</span>
+          <a href="#demo" class="btn btn-ghost btn-lg">
+            <span class="play-circle" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </span>
             شاهد كيف يعمل
           </a>
         </div>
 
         <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number">+500</span>
-            <span class="stat-label">شركة تثق بنا</span>
+          <div class="stat-item">
+            <span class="stat-val">+1000</span>
+            <span class="stat-lbl">حساب نشط</span>
           </div>
-          <div class="stat-divider" aria-hidden="true"></div>
-          <div class="stat">
-            <span class="stat-number">98%</span>
-            <span class="stat-label">رضا العملاء</span>
+          <div class="stat-div" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-val">99%</span>
+            <span class="stat-lbl">رضا العملاء</span>
           </div>
-          <div class="stat-divider" aria-hidden="true"></div>
-          <div class="stat">
-            <span class="stat-number">+2M</span>
-            <span class="stat-label">محادثة شهرياً</span>
+          <div class="stat-div" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-val">24/7</span>
+            <span class="stat-lbl">ردود تلقائية</span>
           </div>
         </div>
       </div>
 
+      <!-- Right: Phone Mockup -->
       <div class="hero-visual" aria-hidden="true">
-        <div class="dashboard-mockup">
-          <div class="mockup-header">
-            <div class="mockup-dots">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-            </div>
-            <div class="mockup-title">المرتقب - لوحة التحكم</div>
-          </div>
-          <div class="mockup-body">
-            <div class="mockup-sidebar">
-              <div class="sidebar-item active">
-                <span class="sidebar-icon">📬</span>
-                <span>الصندوق الوارد</span>
-                <span class="badge">12</span>
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="chat-header">
+              <div class="chat-avatar-wrap">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <rect width="28" height="28" rx="7" fill="url(#chatAv)"/>
+                  <path d="M7 9h14M7 14h9M7 19h11" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="21" cy="19" r="3" fill="#fff" opacity="0.9"/>
+                  <defs><linearGradient id="chatAv" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#1E40AF"/></linearGradient></defs>
+                </svg>
+                <div class="chat-avatar-dot"></div>
               </div>
-              <div class="sidebar-item">
-                <span class="sidebar-icon">💬</span>
-                <span>المحادثات</span>
-              </div>
-              <div class="sidebar-item">
-                <span class="sidebar-icon">🤖</span>
-                <span>الروبوت</span>
-              </div>
-              <div class="sidebar-item">
-                <span class="sidebar-icon">📊</span>
-                <span>التقارير</span>
+              <div>
+                <div class="chat-header-name">سوبر جات 🤖</div>
+                <div class="chat-header-status">● نشط الآن</div>
               </div>
             </div>
-            <div class="mockup-main">
-              <div class="chat-item unread">
-                <div class="chat-avatar">أح</div>
-                <div class="chat-info">
-                  <div class="chat-name">أحمد محمود</div>
-                  <div class="chat-preview">أريد الاستفسار عن...</div>
-                </div>
-                <div class="chat-meta">
-                  <span class="chat-time">9:30 ص</span>
-                  <span class="platform-badge whatsapp">واتساب</span>
-                </div>
+            <div class="chat-msgs">
+              <div class="msg msg-in">
+                <p>السلام عليكم، كم سعر الباقة؟</p>
+                <span class="msg-time">9:00 ص</span>
               </div>
-              <div class="chat-item">
-                <div class="chat-avatar">سا</div>
-                <div class="chat-info">
-                  <div class="chat-name">سارة علي</div>
-                  <div class="chat-preview">شكراً جزيلاً على المساعدة</div>
-                </div>
-                <div class="chat-meta">
-                  <span class="chat-time">8:15 ص</span>
-                  <span class="platform-badge instagram">إنستغرام</span>
-                </div>
+              <div class="msg msg-out">
+                <p>أهلاً! باقتنا تبدأ من 29$. تودّ معرفة التفاصيل؟ 😊</p>
+                <span class="msg-time">9:00 ص</span>
               </div>
-              <div class="chat-item">
-                <div class="chat-avatar">مح</div>
-                <div class="chat-info">
-                  <div class="chat-name">محمد خالد</div>
-                  <div class="chat-preview">هل يمكنني تغيير الطلب؟</div>
-                </div>
-                <div class="chat-meta">
-                  <span class="chat-time">أمس</span>
-                  <span class="platform-badge email">إيميل</span>
-                </div>
+              <div class="msg msg-in">
+                <p>نعم من فضلك</p>
+                <span class="msg-time">9:01 ص</span>
               </div>
-              <div class="mockup-notification">
-                <span class="notif-icon">🤖</span>
-                <span>الروبوت رد على 5 استفسارات تلقائياً</span>
+              <div class="msg msg-out">
+                <p>✅ تم إرسال التفاصيل! هل تريد تجربة مجانية؟</p>
+                <span class="msg-time">9:01 ص</span>
+              </div>
+              <div class="msg msg-bot-note">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+                رد تلقائي من سوبر جات
               </div>
             </div>
           </div>
         </div>
 
-        <div class="floating-card card-1">
-          <span class="floating-icon">⚡</span>
+        <!-- Floating info cards -->
+        <div class="hero-floating-card fc-1">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>رد تلقائي في ثوانٍ</span>
+        </div>
+        <div class="hero-floating-card fc-2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="2.2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <span>إدارة الطلبات</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trusted-by strip -->
+    <div class="hero-trust">
+      <div class="container">
+        <p class="trust-label">موثوق من قِبَل</p>
+        <div class="trust-logos">
+          <span>🍕 المطاعم</span>
+          <span>🛍️ المتاجر</span>
+          <span>🏥 العيادات</span>
+          <span>📚 المراكز التعليمية</span>
+          <span>🔧 الخدمات المحلية</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. WHAT DOES SUPERJAT DO ===== -->
+  <section class="section-what" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">⚡ ماذا يفعل سوبر جات</div>
+        <h2 class="section-title">كل شيء يحدث تلقائياً</h2>
+        <p class="section-sub">بدون تدخل يدوي — سوبر جات يعمل على مدار الساعة لصالح عملك</p>
+      </div>
+
+      <div class="what-grid">
+
+        <div class="what-card reveal">
+          <div class="what-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>الرد على الرسائل</h3>
+          <p>يرد على رسائل إنستغرام تلقائياً ويجيب على استفسارات العملاء في أي وقت من اليوم.</p>
+          <div class="what-tag">DM Automation</div>
+        </div>
+
+        <div class="what-card reveal">
+          <div class="what-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <h3>إدارة التعليقات</h3>
+          <p>يتفاعل مع التعليقات على منشوراتك ويرسل رسالة خاصة للعميل المهتم تلقائياً.</p>
+          <div class="what-tag">Comment Triggers</div>
+        </div>
+
+        <div class="what-card reveal">
+          <div class="what-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>
+          </div>
+          <h3>حجز الطلبات</h3>
+          <p>يسجّل طلبات الزبائن وينظمها بشكل تلقائي دون الحاجة لأي تدخل بشري.</p>
+          <div class="what-tag">Order Management</div>
+        </div>
+
+        <div class="what-card reveal">
+          <div class="what-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+          </div>
+          <h3>إعادة نشر القصص</h3>
+          <p>إذا ذكر أحد حسابك في قصة (Mention)، يعيد نشرها تلقائياً لتوسيع نطاق الوصول.</p>
+          <div class="what-tag">Story Repost</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. HOW IT WORKS ===== -->
+  <section class="section-how" id="how-it-works">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">🛠️ آلية العمل</div>
+        <h2 class="section-title">كيف يعمل النظام؟</h2>
+        <p class="section-sub">ثلاث خطوات بسيطة وحسابك يعمل على الطيار الآلي</p>
+      </div>
+
+      <div class="flow-container reveal">
+
+        <div class="flow-step">
+          <div class="flow-num">١</div>
+          <div class="flow-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </div>
+          <h3>ربط الحساب</h3>
+          <p>اربط حساب إنستغرام الخاص بك بمنصة سوبر جات في دقيقة واحدة</p>
+        </div>
+
+        <div class="flow-arrow" aria-hidden="true">
+          <svg width="48" height="20" viewBox="0 0 48 20" fill="none">
+            <path d="M0 10h42M36 3l8 7-8 7" stroke="url(#fa1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="fa1" x1="0" y1="10" x2="48" y2="10" gradientUnits="userSpaceOnUse"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#1E40AF"/></linearGradient></defs>
+          </svg>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-num">٢</div>
+          <div class="flow-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>تحديد السيناريوهات</h3>
+          <p>صمّم الردود والسيناريوهات المناسبة لعملك بمحرر سهل الاستخدام</p>
+        </div>
+
+        <div class="flow-arrow" aria-hidden="true">
+          <svg width="48" height="20" viewBox="0 0 48 20" fill="none">
+            <path d="M0 10h42M36 3l8 7-8 7" stroke="url(#fa2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="fa2" x1="0" y1="10" x2="48" y2="10" gradientUnits="userSpaceOnUse"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#1E40AF"/></linearGradient></defs>
+          </svg>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-num">٣</div>
+          <div class="flow-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>الانطلاق التلقائي</h3>
+          <p>يبدأ النظام بالرد التلقائي والتفاعل مع عملائك فوراً على مدار الساعة</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. FEATURES LIST ===== -->
+  <section class="section-features" id="feature-list">
+    <div class="container feat-container">
+
+      <div class="feat-content reveal">
+        <div class="section-tag">✨ القدرات</div>
+        <h2 class="section-title">ميزات قوية لإدارة حسابك</h2>
+        <p class="section-sub">كل ما تحتاجه لتحويل إنستغرام إلى قناة مبيعات فعّالة</p>
+        <ul class="feat-list">
+          <li>
+            <span class="feat-check" aria-hidden="true">✔</span>
+            <div>
+              <strong>ردود تلقائية ذكية</strong>
+              <p>يتعرف على نية العميل ويرد بالمحتوى المناسب تلقائياً</p>
+            </div>
+          </li>
+          <li>
+            <span class="feat-check" aria-hidden="true">✔</span>
+            <div>
+              <strong>تحليل التعليقات</strong>
+              <p>يكشف العملاء المهتمين من التعليقات ويتفاعل معهم فوراً</p>
+            </div>
+          </li>
+          <li>
+            <span class="feat-check" aria-hidden="true">✔</span>
+            <div>
+              <strong>بناء قاعدة بيانات العملاء</strong>
+              <p>يجمع معلومات العملاء تلقائياً وينظمها في مكان واحد</p>
+            </div>
+          </li>
+          <li>
+            <span class="feat-check" aria-hidden="true">✔</span>
+            <div>
+              <strong>تحويل الرسائل إلى طلبات</strong>
+              <p>من DM مباشرةً إلى طلب مسجل ومنظم في النظام</p>
+            </div>
+          </li>
+          <li>
+            <span class="feat-check" aria-hidden="true">✔</span>
+            <div>
+              <strong>إدارة المحادثات بسهولة</strong>
+              <p>لوحة تحكم موحدة لكل محادثاتك مع تصنيف ذكي</p>
+            </div>
+          </li>
+          <li>
+            <span class="feat-check" aria-hidden="true">✔</span>
+            <div>
+              <strong>أتمتة التفاعل مع الجمهور</strong>
+              <p>لايكات وردود وقصص — كلها آلية بدون أي تدخل</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Dashboard Visual -->
+      <div class="feat-visual reveal" aria-hidden="true">
+        <div class="dashboard-card">
+          <div class="dash-header">
+            <div class="dash-dots">
+              <span class="dd dd-red"></span>
+              <span class="dd dd-yellow"></span>
+              <span class="dd dd-green"></span>
+            </div>
+            <span class="dash-title">لوحة التحكم — سوبر جات</span>
+          </div>
+          <div class="dash-body">
+            <div class="dash-stat-row">
+              <div class="dash-stat">
+                <div class="ds-val">248</div>
+                <div class="ds-lbl">رسالة اليوم</div>
+              </div>
+              <div class="dash-stat">
+                <div class="ds-val">92%</div>
+                <div class="ds-lbl">معدل الرد</div>
+              </div>
+              <div class="dash-stat">
+                <div class="ds-val">37</div>
+                <div class="ds-lbl">طلب جديد</div>
+              </div>
+            </div>
+            <div class="dash-chart">
+              <div class="chart-bar" style="height:55%"></div>
+              <div class="chart-bar" style="height:75%"></div>
+              <div class="chart-bar" style="height:60%"></div>
+              <div class="chart-bar chart-bar-active" style="height:90%"></div>
+              <div class="chart-bar" style="height:70%"></div>
+              <div class="chart-bar" style="height:85%"></div>
+              <div class="chart-bar" style="height:65%"></div>
+            </div>
+            <div class="dash-label-row">
+              <span>أحد</span><span>إثن</span><span>ثلا</span>
+              <span class="dash-active-lbl">أرب</span>
+              <span>خمي</span><span>جمع</span><span>سبت</span>
+            </div>
+            <div class="dash-conv-list">
+              <div class="dash-conv">
+                <div class="dc-av">أح</div>
+                <div class="dc-info">
+                  <div class="dc-name">أحمد صالح</div>
+                  <div class="dc-msg">ما هو سعر الباقة؟</div>
+                </div>
+                <span class="dc-badge dc-badge-auto">رد تلقائي</span>
+              </div>
+              <div class="dash-conv">
+                <div class="dc-av">سم</div>
+                <div class="dc-info">
+                  <div class="dc-name">سمية علي</div>
+                  <div class="dc-msg">أريد حجز طلب</div>
+                </div>
+                <span class="dc-badge dc-badge-order">طلب جديد</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== 5. WHO IS IT FOR ===== -->
+  <section class="section-who" id="who-for">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">🎯 الجمهور المستهدف</div>
+        <h2 class="section-title">مناسبة لكل الأعمال</h2>
+        <p class="section-sub">سواء كنت صاحب مطعم أو متجر أو عيادة — سوبر جات يناسبك تماماً</p>
+      </div>
+
+      <div class="who-grid">
+        <div class="who-card reveal">
+          <div class="who-emoji">🍕</div>
+          <h3>المطاعم</h3>
+          <p>استقبل الطلبات عبر إنستغرام وأرسلها مباشرةً للمطبخ تلقائياً بدون موظف</p>
+        </div>
+        <div class="who-card reveal">
+          <div class="who-emoji">🛍️</div>
+          <h3>المتاجر الإلكترونية</h3>
+          <p>اجمع الطلبات والاستفسارات وحوّلها إلى مبيعات فورية دون جهد</p>
+        </div>
+        <div class="who-card reveal">
+          <div class="who-emoji">🏥</div>
+          <h3>العيادات</h3>
+          <p>جدوّل المواعيد تلقائياً وأرسل تذكيرات للمرضى عبر الرسائل المباشرة</p>
+        </div>
+        <div class="who-card reveal">
+          <div class="who-emoji">📚</div>
+          <h3>المراكز التعليمية</h3>
+          <p>أجب على استفسارات الطلاب وأهاليهم وسجّل التسجيلات على مدار الساعة</p>
+        </div>
+        <div class="who-card reveal">
+          <div class="who-emoji">🔧</div>
+          <h3>الخدمات المحلية</h3>
+          <p>استقبل طلبات الخدمة ونظّم مواعيد الزيارات تلقائياً مع تأكيد فوري</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. DEMO – RESTAURANT SCENARIO ===== -->
+  <section class="section-demo" id="demo">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">🎬 عرض توضيحي</div>
+        <h2 class="section-title">شاهد سوبر جات أثناء العمل</h2>
+        <p class="section-sub">سيناريو حقيقي: مطعم يستقبل الطلبات بدون موظف استقبال</p>
+      </div>
+
+      <div class="scenario-container reveal">
+        <div class="scenario-header">
+          <span class="sc-badge">🍕 سيناريو المطعم — من الطلب إلى المطبخ</span>
+        </div>
+
+        <div class="scenario-flow">
+          <div class="sc-node">
+            <div class="sc-icon sc-icon-instagram">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <span class="sc-label">إنستغرام</span>
+            <small class="sc-sub">الزبون يرسل طلبه</small>
+          </div>
+
+          <div class="sc-arrow" aria-hidden="true">
+            <svg width="40" height="20" viewBox="0 0 40 20" fill="none"><path d="M0 10h34M28 3l8 7-8 7" stroke="url(#sca1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="sca1" x1="0" y1="10" x2="40" y2="10"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#1E40AF"/></linearGradient></defs></svg>
+          </div>
+
+          <div class="sc-node">
+            <div class="sc-icon sc-icon-bot">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/><circle cx="9" cy="17" r="1"/><circle cx="15" cy="17" r="1"/></svg>
+            </div>
+            <span class="sc-label">سوبر جات</span>
+            <small class="sc-sub">يعالج الطلب</small>
+          </div>
+
+          <div class="sc-arrow" aria-hidden="true">
+            <svg width="40" height="20" viewBox="0 0 40 20" fill="none"><path d="M0 10h34M28 3l8 7-8 7" stroke="url(#sca2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="sca2" x1="0" y1="10" x2="40" y2="10"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#1E40AF"/></linearGradient></defs></svg>
+          </div>
+
+          <div class="sc-node">
+            <div class="sc-icon sc-icon-n8n">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <span class="sc-label">n8n</span>
+            <small class="sc-sub">تشغيل سير العمل</small>
+          </div>
+
+          <div class="sc-arrow" aria-hidden="true">
+            <svg width="40" height="20" viewBox="0 0 40 20" fill="none"><path d="M0 10h34M28 3l8 7-8 7" stroke="url(#sca3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="sca3" x1="0" y1="10" x2="40" y2="10"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#1E40AF"/></linearGradient></defs></svg>
+          </div>
+
+          <div class="sc-node">
+            <div class="sc-icon sc-icon-db">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <span class="sc-label">تسجيل الطلب</span>
+            <small class="sc-sub">في قاعدة البيانات</small>
+          </div>
+
+          <div class="sc-arrow" aria-hidden="true">
+            <svg width="40" height="20" viewBox="0 0 40 20" fill="none"><path d="M0 10h34M28 3l8 7-8 7" stroke="url(#sca4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="sca4" x1="0" y1="10" x2="40" y2="10"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#1E40AF"/></linearGradient></defs></svg>
+          </div>
+
+          <div class="sc-node">
+            <div class="sc-icon sc-icon-print">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            </div>
+            <span class="sc-label">طباعة الفاتورة</span>
+            <small class="sc-sub">في المطبخ تلقائياً</small>
+          </div>
+        </div>
+
+        <div class="scenario-results">
+          <div class="sr-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            يرد على الزبون تلقائياً بتأكيد الطلب
+          </div>
+          <div class="sr-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            يسجل الطلب في النظام فوراً بدون أي خطأ بشري
+          </div>
+          <div class="sr-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            يطبع الفاتورة في المطبخ بدون أي تدخل بشري
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. PRICING ===== -->
+  <section class="section-pricing" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">💰 الأسعار</div>
+        <h2 class="section-title">باقات سوبر جات</h2>
+        <p class="section-sub">جميع الباقات تشمل تجربة مجانية 14 يوماً — لا حاجة لبطاقة ائتمانية</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card reveal">
+          <div class="plan-header">
+            <div class="plan-icon">🚀</div>
+            <div class="plan-name">الباقة الأساسية</div>
+            <div class="plan-price">
+              <span class="p-currency">$</span>
+              <span class="p-amount">29</span>
+              <span class="p-period">/ شهر</span>
+            </div>
+            <p class="plan-desc">مناسبة للحسابات الصغيرة والمشاريع الناشئة</p>
+          </div>
+          <ul class="plan-feats">
+            <li><span class="pf-check">✓</span> ردود تلقائية أساسية</li>
+            <li><span class="pf-check">✓</span> حتى 500 رسالة / شهر</li>
+            <li><span class="pf-check">✓</span> ربط حساب واحد</li>
+            <li><span class="pf-check">✓</span> تقارير أساسية</li>
+            <li class="pf-unavail"><span class="pf-x">✗</span> إدارة التعليقات</li>
+            <li class="pf-unavail"><span class="pf-x">✗</span> تكاملات n8n</li>
+          </ul>
+          <a href="#cta" class="btn btn-outline btn-full">ابدأ مجاناً</a>
+        </div>
+
+        <div class="pricing-card pricing-card-popular reveal">
+          <div class="popular-tag">⭐ الأكثر شعبية</div>
+          <div class="plan-header">
+            <div class="plan-icon">💼</div>
+            <div class="plan-name">الباقة الاحترافية</div>
+            <div class="plan-price">
+              <span class="p-currency">$</span>
+              <span class="p-amount">79</span>
+              <span class="p-period">/ شهر</span>
+            </div>
+            <p class="plan-desc">للمتاجر والمطاعم والشركات المتنامية</p>
+          </div>
+          <ul class="plan-feats">
+            <li><span class="pf-check">✓</span> ردود تلقائية ذكية بالذكاء الاصطناعي</li>
+            <li><span class="pf-check">✓</span> حتى 5000 رسالة / شهر</li>
+            <li><span class="pf-check">✓</span> ربط 3 حسابات إنستغرام</li>
+            <li><span class="pf-check">✓</span> إدارة التعليقات</li>
+            <li><span class="pf-check">✓</span> تسجيل الطلبات</li>
+            <li><span class="pf-check">✓</span> تقارير متقدمة</li>
+          </ul>
+          <a href="#cta" class="btn btn-primary btn-full">اشترك الآن</a>
+        </div>
+
+        <div class="pricing-card reveal">
+          <div class="plan-header">
+            <div class="plan-icon">🏢</div>
+            <div class="plan-name">الباقة المتقدمة</div>
+            <div class="plan-price">
+              <span class="p-currency">$</span>
+              <span class="p-amount">199</span>
+              <span class="p-period">/ شهر</span>
+            </div>
+            <p class="plan-desc">للأعمال الكبيرة ذات الاحتياجات المتقدمة</p>
+          </div>
+          <ul class="plan-feats">
+            <li><span class="pf-check">✓</span> ردود غير محدودة</li>
+            <li><span class="pf-check">✓</span> رسائل غير محدودة</li>
+            <li><span class="pf-check">✓</span> حسابات غير محدودة</li>
+            <li><span class="pf-check">✓</span> تكاملات n8n مخصصة</li>
+            <li><span class="pf-check">✓</span> مدير حساب مخصص</li>
+            <li><span class="pf-check">✓</span> دعم أولوية 24/7</li>
+          </ul>
+          <a href="#cta" class="btn btn-outline btn-full">تواصل معنا</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. TRUST – AL-MURTAQAB ===== -->
+  <section class="section-trust">
+    <div class="container reveal">
+      <div class="trust-card">
+        <div class="trust-brand">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+            <rect width="44" height="44" rx="12" fill="url(#trustG)"/>
+            <path d="M11 15h22M11 22h14M11 29h18" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="32" cy="29" r="4.5" fill="#fff" opacity="0.9"/>
+            <defs><linearGradient id="trustG" x1="0" y1="0" x2="44" y2="44"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#1E40AF"/></linearGradient></defs>
+          </svg>
           <div>
-            <div class="floating-title">وقت الاستجابة</div>
-            <div class="floating-value">أقل من دقيقة</div>
+            <div class="trust-brand-name">المرتقب</div>
+            <div class="trust-brand-sub">Al-Murtaqab Technology</div>
           </div>
         </div>
-
-        <div class="floating-card card-2">
-          <span class="floating-icon">📈</span>
-          <div>
-            <div class="floating-title">رضا العملاء</div>
-            <div class="floating-value">98% ⭐</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CLIENTS STRIP ===== -->
-  <section class="clients-strip" aria-label="شركاؤنا">
-    <div class="container">
-      <p class="clients-label">موثوق به من قِبَل الشركات الرائدة</p>
-      <div class="clients-logos">
-        <div class="client-logo">شركة النجوم</div>
-        <div class="client-logo">مجموعة الفجر</div>
-        <div class="client-logo">تقنية الريادة</div>
-        <div class="client-logo">متجر البريق</div>
-        <div class="client-logo">مؤسسة الوفاء</div>
-        <div class="client-logo">شركة الإبداع</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FEATURES SECTION ===== -->
-  <section class="features" id="features">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">✨ المميزات</div>
-        <h2 class="section-title">كل ما تحتاجه لخدمة عملاء استثنائية</h2>
-        <p class="section-desc">
-          منصة المرتقب تجمع كل أدوات التواصل في مكان واحد لتمنح فريقك
-          القدرة على تقديم تجربة عملاء لا مثيل لها.
+        <h2>تقنية موثوقة من المرتقب</h2>
+        <p>
+          سوبر جات جزء من منظومة <strong>المرتقب</strong> التقنية التي تقدم حلولاً رقمية حديثة
+          تساعد الأعمال في العراق على النمو والتحول الرقمي.
+          نحن لا نبني برامج فقط — نبني مستقبل الأعمال الرقمية في المنطقة.
         </p>
-      </div>
-
-      <div class="features-grid">
-
-        <div class="feature-card feature-card-large">
-          <div class="feature-icon-wrap">
-            <span class="feature-icon">📬</span>
+        <div class="trust-stats">
+          <div class="ts-item">
+            <div class="ts-val">5+</div>
+            <div class="ts-lbl">سنوات خبرة</div>
           </div>
-          <h3>صندوق وارد موحد</h3>
-          <p>
-            اجمع كل رسائلك من واتساب وإنستغرام والبريد الإلكتروني وتويتر
-            في صندوق وارد واحد ذكي. لا تفوتك أي رسالة بعد الآن.
-          </p>
-          <ul class="feature-list">
-            <li>✅ واتساب بيزنس API</li>
-            <li>✅ إنستغرام Direct</li>
-            <li>✅ البريد الإلكتروني</li>
-            <li>✅ تويتر / X</li>
-            <li>✅ تيليغرام</li>
-          </ul>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon-wrap">
-            <span class="feature-icon">🤖</span>
+          <div class="ts-div" aria-hidden="true"></div>
+          <div class="ts-item">
+            <div class="ts-val">50+</div>
+            <div class="ts-lbl">مشروع منجز</div>
           </div>
-          <h3>روبوت محادثة ذكي</h3>
-          <p>
-            أنشئ روبوت محادثة بدون برمجة يرد على الأسئلة الشائعة تلقائياً
-            ويحيل العملاء للموظف المناسب عند الحاجة.
-          </p>
-          <div class="feature-highlight">يوفر 60% من وقت فريقك</div>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon-wrap">
-            <span class="feature-icon">👥</span>
+          <div class="ts-div" aria-hidden="true"></div>
+          <div class="ts-item">
+            <div class="ts-val">100%</div>
+            <div class="ts-lbl">دعم محلي</div>
           </div>
-          <h3>إدارة الفريق</h3>
-          <p>
-            وزّع المحادثات على أعضاء فريقك، تابع الأداء، وتأكد من أن كل
-            عميل يحصل على الاهتمام الذي يستحقه.
-          </p>
-          <div class="feature-highlight">تعاون سلس بين الأقسام</div>
         </div>
-
-        <div class="feature-card">
-          <div class="feature-icon-wrap">
-            <span class="feature-icon">📊</span>
-          </div>
-          <h3>تقارير وتحليلات متقدمة</h3>
-          <p>
-            احصل على رؤى عميقة حول أداء فريقك ورضا عملائك من خلال لوحات
-            بيانات تفاعلية وتقارير مفصّلة.
-          </p>
-          <div class="feature-highlight">قرارات مبنية على البيانات</div>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon-wrap">
-            <span class="feature-icon">🏷️</span>
-          </div>
-          <h3>تصنيف وتنظيم ذكي</h3>
-          <p>
-            صنّف المحادثات بالوسوم والتصنيفات، وابحث فيها بسرعة، وتتبع
-            حالة كل طلب دعم بدقة.
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon-wrap">
-            <span class="feature-icon">⚡</span>
-          </div>
-          <h3>ردود سريعة وقوالب</h3>
-          <p>
-            أنشئ قوالب ردود جاهزة للأسئلة الشائعة، ووفّر وقت فريقك مع
-            الحفاظ على جودة الردود.
-          </p>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ===== HOW IT WORKS ===== -->
-  <section class="how-it-works" id="how-it-works">
+  <!-- ===== 9. FAQ ===== -->
+  <section class="section-faq" id="faq">
     <div class="container">
-      <div class="section-header">
-        <div class="section-badge">🛠️ كيف يعمل</div>
-        <h2 class="section-title">ابدأ في 3 خطوات بسيطة</h2>
-        <p class="section-desc">لا تحتاج إلى خبرة تقنية. الإعداد يستغرق أقل من 10 دقائق.</p>
+      <div class="section-header reveal">
+        <div class="section-tag">❓ الأسئلة الشائعة</div>
+        <h2 class="section-title">أسئلة يسألها الجميع</h2>
+        <p class="section-sub">إجابات واضحة على أهم أسئلتك عن سوبر جات</p>
       </div>
 
-      <div class="steps-container">
-        <div class="step">
-          <div class="step-number">١</div>
-          <div class="step-content">
-            <h3>سجّل وأنشئ حسابك</h3>
-            <p>أنشئ حسابك مجاناً في ثوانٍ دون الحاجة لبطاقة ائتمانية.</p>
-          </div>
-        </div>
-        <div class="step-connector" aria-hidden="true"></div>
-        <div class="step">
-          <div class="step-number">٢</div>
-          <div class="step-content">
-            <h3>وصّل قنوات التواصل</h3>
-            <p>اربط واتساب وإنستغرام وبقية القنوات بنقرة واحدة.</p>
-          </div>
-        </div>
-        <div class="step-connector" aria-hidden="true"></div>
-        <div class="step">
-          <div class="step-number">٣</div>
-          <div class="step-content">
-            <h3>ابدأ التواصل مع عملائك</h3>
-            <p>استقبل كل رسائلك في مكان واحد وقدّم خدمة عملاء استثنائية.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div class="faq-list" id="faqList">
 
-  <!-- ===== PRICING SECTION ===== -->
-  <section class="pricing" id="pricing">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">💰 الأسعار</div>
-        <h2 class="section-title">خطط مرنة تناسب جميع الأعمال</h2>
-        <p class="section-desc">جميع الخطط تشمل تجربة مجانية 14 يوماً. لا حاجة لبطاقة ائتمانية.</p>
-      </div>
-
-      <div class="pricing-toggle">
-        <span class="toggle-label">شهري</span>
-        <button class="toggle-btn" id="billingToggle" role="switch" aria-checked="false" aria-label="التبديل بين الدفع الشهري والسنوي">
-          <span class="toggle-thumb"></span>
-        </button>
-        <span class="toggle-label">
-          سنوي
-          <span class="save-badge">وفّر 20%</span>
-        </span>
-      </div>
-
-      <div class="pricing-cards">
-
-        <div class="pricing-card">
-          <div class="plan-name">المبتدئ</div>
-          <div class="plan-price">
-            <span class="price-currency">ر.س</span>
-            <span class="price-amount" data-monthly="99" data-yearly="79">99</span>
-            <span class="price-period">/ شهر</span>
-          </div>
-          <p class="plan-desc">مثالي للشركات الناشئة والمشاريع الصغيرة</p>
-          <ul class="plan-features">
-            <li><span class="check">✓</span> 2 قنوات تواصل</li>
-            <li><span class="check">✓</span> 3 أعضاء فريق</li>
-            <li><span class="check">✓</span> 1,000 محادثة / شهر</li>
-            <li><span class="check">✓</span> روبوت محادثة أساسي</li>
-            <li><span class="check">✓</span> تقارير أساسية</li>
-            <li class="unavailable"><span class="x">✗</span> تكاملات متقدمة</li>
-            <li class="unavailable"><span class="x">✗</span> دعم أولوية</li>
-          </ul>
-          <a href="#contact" class="btn btn-outline btn-full">ابدأ مجاناً</a>
-        </div>
-
-        <div class="pricing-card pricing-card-popular">
-          <div class="popular-badge">الأكثر شعبية ⭐</div>
-          <div class="plan-name">الاحترافي</div>
-          <div class="plan-price">
-            <span class="price-currency">ر.س</span>
-            <span class="price-amount" data-monthly="299" data-yearly="239">299</span>
-            <span class="price-period">/ شهر</span>
-          </div>
-          <p class="plan-desc">للفرق المتنامية التي تحتاج مميزات متقدمة</p>
-          <ul class="plan-features">
-            <li><span class="check">✓</span> 10 قنوات تواصل</li>
-            <li><span class="check">✓</span> 15 عضو فريق</li>
-            <li><span class="check">✓</span> 10,000 محادثة / شهر</li>
-            <li><span class="check">✓</span> روبوت محادثة متقدم</li>
-            <li><span class="check">✓</span> تقارير متقدمة</li>
-            <li><span class="check">✓</span> تكاملات متقدمة</li>
-            <li class="unavailable"><span class="x">✗</span> مدير حساب مخصص</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary btn-full">ابدأ مجاناً</a>
-        </div>
-
-        <div class="pricing-card">
-          <div class="plan-name">المؤسسات</div>
-          <div class="plan-price">
-            <span class="price-currency">ر.س</span>
-            <span class="price-amount" data-monthly="799" data-yearly="639">799</span>
-            <span class="price-period">/ شهر</span>
-          </div>
-          <p class="plan-desc">للشركات الكبيرة ذات الاحتياجات المتقدمة</p>
-          <ul class="plan-features">
-            <li><span class="check">✓</span> قنوات غير محدودة</li>
-            <li><span class="check">✓</span> أعضاء فريق غير محدودون</li>
-            <li><span class="check">✓</span> محادثات غير محدودة</li>
-            <li><span class="check">✓</span> روبوت محادثة بالذكاء الاصطناعي</li>
-            <li><span class="check">✓</span> تقارير مخصصة</li>
-            <li><span class="check">✓</span> تكاملات مخصصة</li>
-            <li><span class="check">✓</span> مدير حساب مخصص</li>
-          </ul>
-          <a href="#contact" class="btn btn-outline btn-full">تواصل معنا</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TESTIMONIALS ===== -->
-  <section class="testimonials" aria-label="آراء العملاء">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-badge">💬 آراء العملاء</div>
-        <h2 class="section-title">ماذا يقول عملاؤنا؟</h2>
-      </div>
-
-      <div class="testimonials-grid">
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars" aria-label="5 نجوم من 5">★★★★★</div>
-          <p class="testimonial-text">
-            "المرتقب غيّر طريقة عملنا بالكامل. الآن فريقنا يتعامل مع
-            ضعف عدد العملاء بنفس الوقت والجهد!"
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">عم</div>
-            <div class="author-info">
-              <div class="author-name">عمر محمد</div>
-              <div class="author-title">مدير خدمة العملاء، شركة النجوم</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card testimonial-card-featured">
-          <div class="testimonial-stars" aria-label="5 نجوم من 5">★★★★★</div>
-          <p class="testimonial-text">
-            "الروبوت الذكي يرد على 70% من الاستفسارات تلقائياً. وفّرنا
-            آلاف الريالات ورفعنا رضا العملاء في نفس الوقت."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">نخ</div>
-            <div class="author-info">
-              <div class="author-name">نورة الخالدي</div>
-              <div class="author-title">مؤسسة متجر البريق</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars" aria-label="5 نجوم من 5">★★★★★</div>
-          <p class="testimonial-text">
-            "التقارير التفصيلية ساعدتنا على فهم احتياجات عملائنا وتطوير
-            خدماتنا بشكل ملموس."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">فع</div>
-            <div class="author-info">
-              <div class="author-name">فيصل العتيبي</div>
-              <div class="author-title">الرئيس التنفيذي، تقنية الريادة</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT SECTION ===== -->
-  <section class="contact" id="contact">
-    <div class="container contact-container">
-      <div class="contact-info">
-        <div class="section-badge">📞 تواصل معنا</div>
-        <h2 class="section-title">هل أنت مستعد للبدء؟</h2>
-        <p class="section-desc">
-          تواصل مع فريقنا الآن واحصل على استشارة مجانية. سنساعدك في
-          اختيار الخطة الأنسب لعملك.
-        </p>
-
-        <div class="contact-details">
-          <div class="contact-detail">
-            <span class="contact-icon">📧</span>
-            <div>
-              <div class="detail-label">البريد الإلكتروني</div>
-              <!-- TODO: Replace with actual contact email before deployment -->
-              <a href="mailto:hello@almurtaqab.sa" class="detail-value">hello@almurtaqab.sa</a>
-            </div>
-          </div>
-          <div class="contact-detail">
-            <span class="contact-icon">📱</span>
-            <div>
-              <div class="detail-label">واتساب</div>
-              <!-- TODO: Replace with actual WhatsApp number before deployment -->
-              <a href="https://wa.me/966500000000" class="detail-value" rel="noopener noreferrer" target="_blank">+966 50 000 0000</a>
-            </div>
-          </div>
-          <div class="contact-detail">
-            <span class="contact-icon">🕐</span>
-            <div>
-              <div class="detail-label">ساعات العمل</div>
-              <span class="detail-value">الأحد - الخميس، 9 ص - 6 م</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-form-wrap">
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fullName">الاسم الكامل <span class="required" aria-hidden="true">*</span></label>
-              <input
-                type="text"
-                id="fullName"
-                name="fullName"
-                placeholder="أدخل اسمك الكامل"
-                required
-                autocomplete="name"
-              />
-              <span class="field-error" id="fullNameError" role="alert"></span>
-            </div>
-            <div class="form-group">
-              <label for="email">البريد الإلكتروني <span class="required" aria-hidden="true">*</span></label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="example@company.com"
-                required
-                autocomplete="email"
-              />
-              <span class="field-error" id="emailError" role="alert"></span>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="company">اسم الشركة</label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                placeholder="اسم شركتك أو مشروعك"
-                autocomplete="organization"
-              />
-            </div>
-            <div class="form-group">
-              <label for="plan">الخطة المهتم بها</label>
-              <select id="plan" name="plan">
-                <option value="">اختر الخطة</option>
-                <option value="starter">المبتدئ - 99 ر.س / شهر</option>
-                <option value="pro">الاحترافي - 299 ر.س / شهر</option>
-                <option value="enterprise">المؤسسات - 799 ر.س / شهر</option>
-                <option value="custom">خطة مخصصة</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="message">رسالتك <span class="required" aria-hidden="true">*</span></label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              placeholder="أخبرنا عن احتياجاتك وكيف يمكننا مساعدتك..."
-              required
-            ></textarea>
-            <span class="field-error" id="messageError" role="alert"></span>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-full btn-lg" id="submitBtn">
-            <span class="btn-text">أرسل رسالتك</span>
-            <span class="btn-loading" aria-hidden="true">جاري الإرسال...</span>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            هل سوبر جات يعمل مع إنستغرام؟
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
-
-          <div class="form-success" id="formSuccess" role="status" aria-live="polite">
-            <span class="success-icon">✅</span>
-            <p>تم إرسال رسالتك بنجاح! سيتواصل معك فريقنا خلال 24 ساعة.</p>
+          <div class="faq-a" hidden>
+            <p>نعم، سوبر جات مبني خصيصاً للعمل مع إنستغرام. يتكامل مع Instagram Messaging API الرسمية لضمان الأمان والاستقرار والامتثال لسياسات المنصة.</p>
           </div>
-        </form>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            هل يحتاج تشغيل سوبر جات خبرة تقنية؟
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" hidden>
+            <p>لا على الإطلاق. واجهة سوبر جات مصممة لتكون بسيطة وسهلة الاستخدام لأي شخص. ستتمكن من إعداد ردودك الأولى في أقل من 10 دقائق دون أي خلفية تقنية.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            هل يمكن تخصيص الردود لعملي تماماً؟
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" hidden>
+            <p>نعم بالكامل. يمكنك تخصيص كل رد، وسيناريو محادثة، وقوالب رسائل لتناسب هوية علامتك التجارية وطبيعة عملك بالضبط. لا توجد قيود على درجة التخصيص.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            ما الفرق بين سوبر جات وبرامج الردود الأخرى؟
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" hidden>
+            <p>سوبر جات لا يكتفي بالرد — بل يفهم نية العميل ويحوّل الرسائل إلى طلبات، ويتكامل مع أنظمة العمل الداخلية عبر n8n. هو حل متكامل لأتمتة المبيعات وليس مجرد بوت ردود بسيط.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">
+            هل بياناتي وبيانات عملائي آمنة؟
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" hidden>
+            <p>نعم. نستخدم تشفيراً من طرف إلى طرف (end-to-end encryption) لجميع البيانات، ونلتزم بسياسة خصوصية صارمة. بياناتك لن تُشارك مع أي طرف ثالث تحت أي ظرف.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 10. FINAL CTA ===== -->
+  <section class="section-cta" id="cta">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-bg-circle" aria-hidden="true"></div>
+        <div class="cta-content">
+          <div class="section-tag cta-tag">🚀 ابدأ اليوم</div>
+          <h2>ابدأ أتمتة حسابك اليوم</h2>
+          <p>جرّب سوبر جات مجاناً لمدة 14 يوماً — بدون بطاقة ائتمانية، بدون التزامات.</p>
+          <a href="mailto:hello@almurtaqab.iq" class="btn btn-white btn-xl">
+            جرّب سوبر جات الآن
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <!-- TODO: Replace placeholder phone/email with real contact details before deployment -->
+          <p class="cta-note">
+            تحتاج مساعدة؟
+            <a href="https://wa.me/9647800000000" rel="noopener noreferrer" target="_blank">تواصل معنا عبر واتساب</a>
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="container footer-container">
+    <div class="container footer-top">
+
       <div class="footer-brand">
-        <a href="#" class="logo" aria-label="المرتقب">
-          <span class="logo-icon">🔷</span>
-          <span class="logo-text"><span class="accent">المرتقب</span></span>
+        <a href="#" class="logo" aria-label="سوبر جات">
+          <div class="logo-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="9" fill="url(#fLg)"/>
+              <path d="M8 10h16M8 16h10M8 22h13" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="24" cy="22" r="3.5" fill="#fff" opacity="0.95"/>
+              <defs><linearGradient id="fLg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#1E40AF"/></linearGradient></defs>
+            </svg>
+          </div>
+          <span class="logo-text">سوبر<span class="logo-accent">جات</span></span>
         </a>
-        <p class="footer-tagline">منصة خدمة العملاء الموحدة للأعمال العربية</p>
+        <p class="footer-tagline">أتمتة إنستغرام الذكية للأعمال العربية</p>
+        <div class="footer-by">
+          منتج من <strong>شركة المرتقب</strong> 🇮🇶
+        </div>
+
         <div class="social-links">
-          <a href="#" aria-label="تويتر" class="social-link" rel="noopener noreferrer">𝕏</a>
-          <a href="#" aria-label="لينكدإن" class="social-link" rel="noopener noreferrer">in</a>
-          <a href="#" aria-label="واتساب" class="social-link" rel="noopener noreferrer">💬</a>
-          <a href="#" aria-label="إنستغرام" class="social-link" rel="noopener noreferrer">📷</a>
-          <a href="https://github.com/ALMURTAKB/app" aria-label="GitHub" class="social-link" rel="noopener noreferrer">GH</a>
+          <a href="#" aria-label="إنستغرام" class="social-link" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="تويتر / X" class="social-link" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+          <!-- TODO: Replace placeholder WhatsApp number with real contact number before deployment -->
+          <a href="https://wa.me/9647800000000" aria-label="واتساب" class="social-link" rel="noopener noreferrer" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+          <a href="https://github.com/ALMURTAKB/app" aria-label="GitHub" class="social-link" rel="noopener noreferrer" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
         </div>
       </div>
 
@@ -620,10 +796,10 @@
         <div class="footer-col">
           <h4>المنتج</h4>
           <ul>
-            <li><a href="#features">المميزات</a></li>
-            <li><a href="#pricing">الأسعار</a></li>
+            <li><a href="#features">الميزات</a></li>
             <li><a href="#how-it-works">كيف يعمل</a></li>
-            <li><a href="#">التكاملات</a></li>
+            <li><a href="#pricing">الأسعار</a></li>
+            <li><a href="#demo">عرض توضيحي</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -632,7 +808,7 @@
             <li><a href="#">عن المرتقب</a></li>
             <li><a href="#">المدونة</a></li>
             <li><a href="#">وظائف</a></li>
-            <li><a href="#contact">اتصل بنا</a></li>
+            <li><a href="#">اتصل بنا</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -657,14 +833,16 @@
 
     <div class="footer-bottom">
       <div class="container">
-        <p>© <span id="currentYear">2024</span> المرتقب. جميع الحقوق محفوظة.</p>
-        <p>صُنع بـ ❤️ في المملكة العربية السعودية 🇸🇦</p>
+        <p>© <span id="currentYear">2025</span> شركة المرتقب. جميع الحقوق محفوظة.</p>
+        <p>صُنع بـ ❤️ في العراق 🇮🇶</p>
       </div>
     </div>
   </footer>
 
   <!-- Back to top -->
-  <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">↑</button>
+  <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
   <!-- Custom JS -->
   <script src="js/main.js"></script>
