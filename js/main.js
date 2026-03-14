@@ -10,7 +10,7 @@
   /* ---- Navbar: scroll effect ---- */
   var navbar = document.getElementById('navbar');
   function handleNavbarScroll() {
-    navbar.classList.toggle('scrolled', window.scrollY > 20);
+    if (navbar) navbar.classList.toggle('scrolled', window.scrollY > 20);
   }
   window.addEventListener('scroll', handleNavbarScroll, { passive: true });
 
@@ -51,6 +51,7 @@
   var navLinkEls  = document.querySelectorAll('.nav-links a');
 
   function updateActiveNav() {
+    if (!sections.length || !navLinkEls.length) return;
     var pos = window.scrollY + 100;
     sections.forEach(function (sec) {
       var top    = sec.offsetTop;
@@ -103,19 +104,26 @@
   });
 
   /* ---- Scroll Reveal (Intersection Observer) ---- */
-  var revealOpts = { threshold: 0.1, rootMargin: '0px 0px -40px 0px' };
-  var observer   = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, revealOpts);
+  if ('IntersectionObserver' in window) {
+    var revealOpts = { threshold: 0.1, rootMargin: '0px 0px -40px 0px' };
+    var observer   = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, revealOpts);
 
-  document.querySelectorAll('.reveal').forEach(function (el) {
-    observer.observe(el);
-  });
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      observer.observe(el);
+    });
+  } else {
+    // Fallback: show all elements directly
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      el.classList.add('revealed');
+    });
+  }
 
   /* ---- Back to top ---- */
   var backToTop = document.getElementById('backToTop');
@@ -137,11 +145,15 @@
     anchor.addEventListener('click', function (e) {
       var href = anchor.getAttribute('href');
       if (href === '#') return;
-      var target = document.querySelector(href);
-      if (target) {
-        e.preventDefault();
-        var top = target.getBoundingClientRect().top + window.scrollY - NAVBAR_HEIGHT;
-        window.scrollTo({ top: top, behavior: 'smooth' });
+      try {
+        var target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          var top = target.getBoundingClientRect().top + window.scrollY - NAVBAR_HEIGHT;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      } catch (err) {
+        // Invalid selector, let default behavior happen
       }
     });
   });
